@@ -6,7 +6,7 @@ class OnlineTraining:
         self.driver = driver
 
     
-    # locators
+    # Locators
     Title = (By.XPATH, "//h1[normalize-space()='SDET-QA']")  
     DESCRIPTION = (By.XPATH, "//p[@class='description']")
     IMAGE = (By.XPATH, "//img[@width='640']") 
@@ -26,7 +26,7 @@ class OnlineTraining:
     FOOTER_LINKS = (By.TAG_NAME, "a")
 
 
-    # title
+    # Title
     def title(self):
         title = self.driver.find_element(*self.Title)
         print("---- Online Training page ----")
@@ -49,7 +49,7 @@ class OnlineTraining:
         print("")
 
     
-    # header links
+    # Header links
     def heading(self):
         print("---- Header links ----")
 
@@ -61,7 +61,7 @@ class OnlineTraining:
         print("")
     
     
-    # parahraph
+    # Parahraph
     def parahraph(self):
         print("---- Body texts ----")
 
@@ -72,7 +72,7 @@ class OnlineTraining:
         print("")
 
 
-    # other links
+    # Other links
     def links(self):
         print("---- Other Links ----")
         
@@ -112,7 +112,7 @@ class OnlineTraining:
         print("")
 
 
-    # social media    
+    # Social media    
     def socialmedia(self):
         print("---- Social Media links ----")
 
@@ -125,7 +125,7 @@ class OnlineTraining:
         print("")
 
 
-    # profile and subscribe links
+    # Profile and subscribe links
     def profile(self):
         print("---- Profile and Subscribe links ----")
 
@@ -139,11 +139,10 @@ class OnlineTraining:
 
     
     
-    # load more
+    # Load more
     def loadmore(self):
         print("---- Load More and Embed links ----")
 
-        # <input type="//button[normalize-space()='Load more reviews']" data-field=
         loadmore = self.driver.find_element(*self.LOAD_MORE_BUTTON)
         self.driver.execute_script("arguments[0].scrollIntoView();", loadmore)
         self.driver.execute_script("arguments[0].click();", loadmore)
@@ -172,11 +171,10 @@ class OnlineTraining:
         print("")
 
 
-    # footer
+    # Footer
     def footer(self):
         print("---- Footer links ----")
 
-    # widget-content by class name
         footer = self.driver.find_element(*self.FOOTER_SECTION)
         footer_links = footer.find_elements(*self.FOOTER_LINKS)
         for link in footer_links:
