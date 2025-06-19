@@ -25,7 +25,7 @@ class OnlineTraining:
     FOOTER_LINKS = (By.TAG_NAME, "a")
 
 
-# title
+    # Title
     def title2(self):
         title = self.driver.find_element(*self.Title)
         print("---- Online Training page ----")
@@ -50,7 +50,7 @@ class OnlineTraining:
         print("")
 
 
-    # print and click all header links
+    # Header links
     def heading(self):
         print("---- Header links ----")
 
@@ -62,7 +62,7 @@ class OnlineTraining:
         print("")
     
 
-    # print all body texts 
+    # Body texts 
     def parahraph(self):
         print("---- Body texts ----")
 
@@ -73,7 +73,7 @@ class OnlineTraining:
         print("")
 
 
-    # print and other links 
+    # other links 
     def links(self):
         print("---- Other Links ----")
         
@@ -112,11 +112,11 @@ class OnlineTraining:
         time.sleep(2)
         print("")
 
-        
+
+    # Social media links
     def socialmedia(self):
         print("---- Social Media links ----")
 
-        # post-share-buttons goog-inline-block by class name
         socialmedia = self.driver.find_element(*self.SOCIAL_MEDIA_SECTION)
         socialmedia_links = socialmedia.find_elements(By.TAG_NAME, "a")
         for link in socialmedia_links:
@@ -138,11 +138,10 @@ class OnlineTraining:
         print("")
 
     
-
+    # Load More and Embed links
     def loadmore(self):
         print("---- Load More and Embed links ----")
 
-        # <input type="//button[normalize-space()='Load more reviews']" data-field=
         loadmore = self.driver.find_element(*self.LOAD_MORE_BUTTON)
         self.driver.execute_script("arguments[0].scrollIntoView();", loadmore)
         self.driver.execute_script("arguments[0].click();", loadmore)
@@ -153,7 +152,6 @@ class OnlineTraining:
         time.sleep(2)
 
 
-        # <input type="//a[normalize-space()='Embed Google Reviews on your Blogger website']" data-field=
         embed = self.driver.find_element(*self.EMBED_LINK)
         embed.click()
         print("Embed link clicked")
@@ -162,6 +160,7 @@ class OnlineTraining:
 
         self.driver.back()
 
+        
         Atom = self.driver.find_element(*self.ATOM_LINK)
         Atom.click()
         print("Atom link clicked")
@@ -175,7 +174,6 @@ class OnlineTraining:
     def footer(self):
         print("---- Footer links ----")
 
-    # widget-content by class name
         footer = self.driver.find_element(*self.FOOTER_SECTION)
         footer_links = footer.find_elements(*self.FOOTER_LINKS)
         for link in footer_links:
