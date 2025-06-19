@@ -18,7 +18,6 @@ class OnlineTraining:
     SOCIAL_MEDIA_SECTION = (By.CLASS_NAME, "post-share-buttons")
     SOCIAL_MEDIA_LINKS = (By.TAG_NAME, "a")
     PROFILE_IMAGE = (By.XPATH, "//img[@border='0'][@height='360']")
-    # <input type="//button[normalize-space()='Load more reviews']" data-field=
     LOAD_MORE_BUTTON = (By.XPATH, "//button[normalize-space()='Load more reviews']")
     EMBED_LINK = (By.XPATH, "//a[normalize-space()='Embed Google Reviews on your Blogger website']")
     ATOM_LINK = (By.XPATH, "//a[normalize-space()='Posts (Atom)']")
@@ -26,7 +25,7 @@ class OnlineTraining:
     FOOTER_LINKS = (By.TAG_NAME, "a")
 
 
-
+# title
     def title2(self):
         title = self.driver.find_element(*self.Title)
         print("---- Online Training page ----")
@@ -37,19 +36,21 @@ class OnlineTraining:
         print("Title is: ",title.get_attribute("innerHTML"))     
         time.sleep(2)
 
+        # page description 
         description = self.driver.find_element(*self.DESCRIPTION)
         print("description is: ",description.text)
         print("description is: ",description.get_attribute("innerHTML"))  
         time.sleep(2)
         print("")
 
-
+        # backround image
         image = self.driver.find_element(*self.IMAGE) 
         print("image is: ",image.get_attribute("src"))
         time.sleep(2)
         print("")
 
 
+    # print and click all header links
     def heading(self):
         print("---- Header links ----")
 
@@ -61,6 +62,7 @@ class OnlineTraining:
         print("")
     
 
+    # print all body texts 
     def parahraph(self):
         print("---- Body texts ----")
 
@@ -71,6 +73,7 @@ class OnlineTraining:
         print("")
 
 
+    # print and other links 
     def links(self):
         print("---- Other Links ----")
         
@@ -122,7 +125,7 @@ class OnlineTraining:
         print("")
 
 
-
+    # profile Subscription links 
     def profile(self):
         print("---- Profile and Subscribe links ----")
 
@@ -159,7 +162,6 @@ class OnlineTraining:
 
         self.driver.back()
 
-        #<input type="//a[normalize-space()='Posts (Atom)']" data-field=
         Atom = self.driver.find_element(*self.ATOM_LINK)
         Atom.click()
         print("Atom link clicked")
