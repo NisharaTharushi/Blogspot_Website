@@ -12,14 +12,9 @@ home = Udemy(driver)
 
 
 home.title2()
-
 home.text()
-
 home.header_links()
-
 home.image()
-
 home.name()
-
-home.ViewCourse()
+home.ViewCourse_button()
 
