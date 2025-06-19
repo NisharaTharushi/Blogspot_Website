@@ -5,7 +5,8 @@ class OnlineTraining:
     def __init__(self, driver):
         self.driver = driver
 
-
+    
+    # locators
     Title = (By.XPATH, "//h1[normalize-space()='SDET-QA']")  
     DESCRIPTION = (By.XPATH, "//p[@class='description']")
     IMAGE = (By.XPATH, "//img[@width='640']") 
@@ -25,8 +26,8 @@ class OnlineTraining:
     FOOTER_LINKS = (By.TAG_NAME, "a")
 
 
-    # Title
-    def title2(self):
+    # title
+    def title(self):
         title = self.driver.find_element(*self.Title)
         print("---- Online Training page ----")
         print("")
@@ -36,21 +37,19 @@ class OnlineTraining:
         print("Title is: ",title.get_attribute("innerHTML"))     
         time.sleep(2)
 
-        # page description 
         description = self.driver.find_element(*self.DESCRIPTION)
         print("description is: ",description.text)
         print("description is: ",description.get_attribute("innerHTML"))  
         time.sleep(2)
         print("")
 
-        # backround image
         image = self.driver.find_element(*self.IMAGE) 
         print("image is: ",image.get_attribute("src"))
         time.sleep(2)
         print("")
 
-
-    # Header links
+    
+    # header links
     def heading(self):
         print("---- Header links ----")
 
@@ -61,8 +60,8 @@ class OnlineTraining:
             print("\n")
         print("")
     
-
-    # Body texts 
+    
+    # parahraph
     def parahraph(self):
         print("---- Body texts ----")
 
@@ -73,7 +72,7 @@ class OnlineTraining:
         print("")
 
 
-    # other links 
+    # other links
     def links(self):
         print("---- Other Links ----")
         
@@ -113,10 +112,11 @@ class OnlineTraining:
         print("")
 
 
-    # Social media links
+    # social media    
     def socialmedia(self):
         print("---- Social Media links ----")
 
+        # post-share-buttons goog-inline-block by class name
         socialmedia = self.driver.find_element(*self.SOCIAL_MEDIA_SECTION)
         socialmedia_links = socialmedia.find_elements(By.TAG_NAME, "a")
         for link in socialmedia_links:
@@ -125,7 +125,7 @@ class OnlineTraining:
         print("")
 
 
-    # profile Subscription links 
+    # profile and subscribe links
     def profile(self):
         print("---- Profile and Subscribe links ----")
 
@@ -138,10 +138,12 @@ class OnlineTraining:
         print("")
 
     
-    # Load More and Embed links
+    
+    # load more
     def loadmore(self):
         print("---- Load More and Embed links ----")
 
+        # <input type="//button[normalize-space()='Load more reviews']" data-field=
         loadmore = self.driver.find_element(*self.LOAD_MORE_BUTTON)
         self.driver.execute_script("arguments[0].scrollIntoView();", loadmore)
         self.driver.execute_script("arguments[0].click();", loadmore)
@@ -160,7 +162,7 @@ class OnlineTraining:
 
         self.driver.back()
 
-        
+
         Atom = self.driver.find_element(*self.ATOM_LINK)
         Atom.click()
         print("Atom link clicked")
@@ -170,10 +172,11 @@ class OnlineTraining:
         print("")
 
 
-
+    # footer
     def footer(self):
         print("---- Footer links ----")
 
+    # widget-content by class name
         footer = self.driver.find_element(*self.FOOTER_SECTION)
         footer_links = footer.find_elements(*self.FOOTER_LINKS)
         for link in footer_links:
