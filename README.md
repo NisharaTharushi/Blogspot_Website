@@ -55,6 +55,7 @@ Each page and feature is handled by dedicated test files and Page Object classes
 ## 📁 Project Structure
 
 Blogspot-Website/
+│
 ├── pages/
 │ ├── Home_page.py
 │ ├── Online_training_page.py
