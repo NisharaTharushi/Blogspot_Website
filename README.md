@@ -53,3 +53,22 @@ Each page and feature is handled by dedicated test files and Page Object classes
 
 ## 📁 Project Structure
 
+Blogspot-Website/
+├── pages/
+│ ├── Home_page.py
+│ ├── Online_training_page.py
+│ ├── Playwright_page.py
+│ ├── Udemy_page.py
+│ └── Blog_page.py
+│
+├── tests/
+│ ├── Home_test.py
+│ ├── OnlineTraining_test.py
+│ ├── Playwright_test.py
+│ ├── Udemy_test.py
+│ └── Blog_test.py
+│
+├── test_cases.md # Manual test case documentation
+├── requirements.txt # Python dependencies
+├── README.md # Project documentation (this file)
+└── .gitignore # Git ignore rules
