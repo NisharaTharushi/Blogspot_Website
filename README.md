@@ -51,9 +51,9 @@ Each page and feature is handled by dedicated test files and Page Object classes
 
 ---
 
-<pre>
 ## 📁 Project Structure
 
+<pre>
 Blogspot-Website/
 │
 ├── pages/
