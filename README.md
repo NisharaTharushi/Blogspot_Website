@@ -50,7 +50,8 @@ Each page and feature is handled by dedicated test files and Page Object classes
 - **Execution Platform:** Local (can be integrated with CI like GitHub Actions)
 
 ---
-
+<pre>
+  
 ## 📁 Project Structure
 
 Blogspot-Website/
@@ -72,3 +73,4 @@ Blogspot-Website/
 ├── requirements.txt # Python dependencies
 ├── README.md # Project documentation (this file)
 └── .gitignore # Git ignore rules
+</pre>
