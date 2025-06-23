@@ -6,7 +6,7 @@ This project contains **automated test scripts written in Python using Selenium 
 
 🔗 [Test Automation Practice](https://testautomationpractice.blogspot.com/)
 
-**Test Automation Practice Blogspot** is a comprehensive web-based playground for practicing UI test automation. It includes various real-world web components like forms, buttons, alerts, tables, sliders, and more — making it ideal for developing and testing Selenium skills.
+**Blogspot Automation Website** is a comprehensive web-based playground for practicing UI test automation. It includes various real-world web components like forms, buttons, alerts, tables, sliders, and more — making it ideal for developing and testing Selenium skills.
 
 ---
 
