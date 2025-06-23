@@ -1,4 +1,4 @@
-### Test Cases - General Website Behavior
+### General Website Behavior
 
 | Test Case ID | Test Case Description                  | Test Steps                                              | Expected Result                                          |
 |--------------|-----------------------------------------|----------------------------------------------------------|----------------------------------------------------------|
@@ -9,7 +9,7 @@
 
 ---
 
-### Test Cases - Header Section
+### Header Section
 
 | Test Case ID | Test Case Description                              | Test Steps                               | Expected Result                                                |
 |--------------|-----------------------------------------------------|------------------------------------------|----------------------------------------------------------------|
@@ -28,7 +28,7 @@
 
 ---
 
-### Test Cases - Form Inputs and Validation
+### Form Inputs and Validation
 
 | Test Case ID | Test Case Description                             | Test Steps                                        | Expected Result                                      |
 |--------------|----------------------------------------------------|--------------------------------------------------|------------------------------------------------------|
@@ -42,7 +42,7 @@
 
 ---
 
-### Test Cases - Dropdown Functionality
+### Dropdown Functionality
 
 | Test Case ID | Test Case Description                  | Test Steps                              | Expected Result                             |
 |--------------|-----------------------------------------|------------------------------------------|---------------------------------------------|
@@ -53,7 +53,7 @@
 
 ---
 
-### Test Cases - Checkbox Functionality
+### Checkbox Functionality
 
 | Test Case ID | Test Case Description                       | Test Steps                        | Expected Result                              |
 |--------------|----------------------------------------------|-----------------------------------|----------------------------------------------|
@@ -65,7 +65,7 @@
 
 ---
 
-### Test Cases - Radio Button Functionality
+### Radio Button Functionality
 
 | Test Case ID | Test Case Description                        | Test Steps                                      | Expected Result                                |
 |--------------|-----------------------------------------------|--------------------------------------------------|------------------------------------------------|
@@ -76,7 +76,7 @@
 
 ---
 
-### Test Cases - Buttons & Form Actions
+### Buttons & Form Actions
 
 | Test Case ID | Test Case Description                        | Test Steps                                        | Expected Result                                      |
 |--------------|-----------------------------------------------|--------------------------------------------------|------------------------------------------------------|
@@ -94,7 +94,7 @@
 
 ---
 
-### Test Cases - File Upload
+### File Upload
 
 | Test Case ID | Test Case Description                         | Test Steps                                                        | Expected Result                                    |
 |--------------|------------------------------------------------|-------------------------------------------------------------------|----------------------------------------------------|
@@ -111,7 +111,7 @@
 
 ---
 
-### Test Cases - Static Web Table
+### Static Web Table
 
 | Test Case ID | Test Case Description                        | Test Steps                              | Expected Result                                      |
 |--------------|-----------------------------------------------|------------------------------------------|------------------------------------------------------|
