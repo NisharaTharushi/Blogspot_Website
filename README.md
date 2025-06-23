@@ -1,4 +1,4 @@
-## 🔧 Selenium Test Automation for "Test Automation Blogspot" Website ##
+## 🔧 Selenium Test Automation for "Blogspot Automation Website ##
 
 # 🌐 Project Overview
 
