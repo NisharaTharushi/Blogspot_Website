@@ -89,23 +89,11 @@
 | Form_27      | Verify email format validation               | Enter invalid email and submit form              | Validation error message displayed                   |
 | Form_28      | Verify number input validation               | Enter alphabets in phone number field (if any)   | Validation error shown or input blocked              |
 | Form_29      | Verify character limit in text fields        | Enter more characters than allowed               | Input restricted or error message shown              |
-
----
-
-### Test Cases - Hyperlinks and Navigation
-
-| Test Case ID | Test Case Description                 | Test Steps                              | Expected Result                            |
-|--------------|----------------------------------------|------------------------------------------|--------------------------------------------|
 | Form_30      | Verify all hyperlinks on page         | Click all links present on the homepage  | Links open correct pages in new or same tab |
 | Form_31      | Verify clicking Home link reloads homepage | Click Home or logo link               | Page reloads homepage without errors        |
 
 ---
 
-### Test Cases - File Upload
-
-| Test Case ID | Test Case Description            | Test Steps                         | Expected Result                              |
-|--------------|-----------------------------------|------------------------------------|----------------------------------------------|
-| UPL-01       | Verify file upload button is visible | Locate the file upload input/button | File upload input/button is displayed and enabled |
 ### Test Cases - File Upload
 
 | Test Case ID | Test Case Description                         | Test Steps                                                        | Expected Result                                    |
@@ -176,10 +164,6 @@
 | DATE-27      | Verify calendar widget design                      | Check that calendar layout is aligned and responsive  | All calendar parts are properly displayed           |
 | DATE-28      | Verify calendar on mobile devices                  | Open site on mobile and test date picker              | Calendar adapts to mobile screen properly           |
 
-### Test Cases - Date Picker (Additional)
-
-| Test Case ID | Test Case Description                      | Test Steps                         | Expected Result                                               |
-|--------------|---------------------------------------------|------------------------------------|---------------------------------------------------------------|
 | DATE-29      | Verify readonly behavior (if input is readonly) | Try typing into readonly field  | Manual input not allowed, only calendar selection             |
 | DATE-30      | Verify tooltip/help text (if available)     | Hover over calendar icon           | Tooltip/help info shown                                       |
 
@@ -251,10 +235,6 @@
 | FORM-14      | Verify success/error message after submission | Submit form                                  | Appropriate message appears                      |
 | FORM-15      | Verify form responsiveness                  | Check form on different screen sizes           | Form layout adjusts correctly                    |
 | FORM-16      | Verify spam protection (if CAPTCHA used)    | Submit without CAPTCHA                         | Blocked or error shown (if CAPTCHA present)      |
-### Test Cases - Form (Additional)
-
-| Test Case ID | Test Case Description                        | Test Steps                         | Expected Result                                  |
-|--------------|-----------------------------------------------|------------------------------------|--------------------------------------------------|
 | FORM-17      | Verify input alignment and styling           | Inspect field alignments           | All elements are aligned properly                |
 | FORM-18      | Verify form submission sends data            | Use network tab or inspect post request | Data is submitted to the server              |
 
