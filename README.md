@@ -76,3 +76,10 @@ Blogspot-Website/
 └── .gitignore # Git ignore rules
 
 </pre>
+
+## 🚀 How to Run the Tests
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/your-username/ecommerce-ui-testing.git
+   cd ecommerce-ui-testing
