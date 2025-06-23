@@ -1,12 +1,12 @@
-## 🔧 Selenium Test Automation for "Blogspot Automation Website ##
+## 🔧 Selenium Test Automation for "Blogspot Website ##
 
 # 🌐 Project Overview
 
 This project contains **automated test scripts written in Python using Selenium WebDriver** for the demo website:
 
-🔗 [Test Automation Practice](https://testautomationpractice.blogspot.com/)
+🔗 [Blogspot Automation Website](https://testautomationpractice.blogspot.com/)
 
-**Blogspot Automation Website** is a comprehensive web-based playground for practicing UI test automation. It includes various real-world web components like forms, buttons, alerts, tables, sliders, and more — making it ideal for developing and testing Selenium skills.
+**Blogspot Website** is a comprehensive web-based playground for practicing UI test automation. It includes various real-world web components like forms, buttons, alerts, tables, sliders, and more — making it ideal for developing and testing Selenium skills.
 
 ---
 
