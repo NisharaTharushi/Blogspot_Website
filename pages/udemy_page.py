@@ -38,7 +38,6 @@ class Udemy:
     # Header Links
     def header_links (self):
         print("---- Header links ----")
-
         header = self.driver.find_element(*self.HEADER)
         header_links = header.find_elements(*self.HEADER_LINKS)
         for link in header_links:
@@ -63,7 +62,6 @@ class Udemy:
     # Load more button
     def loadmore_buttons(self):
         print("---- Load More buttons ----")
-
         loadmore = self.driver.find_element(*self.LOAD_MORE_BUTTON)
         self.driver.execute_script("arguments[0].scrollIntoView();", loadmore)
         self.driver.execute_script("arguments[0].click();", loadmore)
@@ -76,6 +74,7 @@ class Udemy:
 
     # Embed Link
     def embed_links(self):
+        print("---- Embed links ----")
         embed = self.driver.find_element(*self.EMBED_LINK)
         self.driver.execute_script("arguments[0].scrollIntoView();", embed)
         self.driver.execute_script("arguments[0].click();", embed)
