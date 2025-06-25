@@ -56,6 +56,7 @@ class Playwright:
 
     
     print("---- Playwright Page ----")
+    
     # Title
     def title(self):
         title = self.driver.find_element(*self.TITLE)
