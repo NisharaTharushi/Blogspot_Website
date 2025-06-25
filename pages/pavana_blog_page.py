@@ -16,9 +16,7 @@ class Blog:
     BUTTONS = (By.TAG_NAME, "a")
 
     
-
-    
-    # print page title
+    # Title
     def print_title(self):
         print("---- Pavana Blog Page ----")
         title = self.driver.title
@@ -26,7 +24,7 @@ class Blog:
         print("")
 
 
-    # print all header links
+    # Header links
     def print_header_links(self):
         print("---- Header navigation links ----")
         header = self.driver.find_element(*self.HEADER)
@@ -36,7 +34,7 @@ class Blog:
         print("")
 
     
-    # click all header links
+    # Header links click test 
     def click_header_links(self):
         print("---- Click all header links ----")
         
