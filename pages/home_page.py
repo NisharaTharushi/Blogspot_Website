@@ -9,7 +9,7 @@ class PageName: # Define the HomePage class
         self.driver = driver
 
 
-    # locators
+    # Lcators
     TITLE = (By.CLASS_NAME, "title")
     HEADER = (By.ID, "PageList2")
     HEADER_LINKS = (By.TAG_NAME, "ul")
@@ -101,7 +101,7 @@ class PageName: # Define the HomePage class
         print("")
     
    
-    # logo
+    # Logo
     def logo (self):
         print("---- Logo ----")
         logo = self.driver.find_element(*PageName.LOGO)
