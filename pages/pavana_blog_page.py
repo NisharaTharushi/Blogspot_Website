@@ -36,8 +36,7 @@ class Blog:
     
     # Header links click test 
     def click_header_links(self):
-        print("---- Click all header links ----")
-        
+        print("---- Click all header links ----")        
         header = self.driver.find_element(*self.HEADER)
         links = header.find_elements(*self.HEADER_LINKS)
         hrefs = [link.get_attribute("href") for link in links if link.get_attribute("href")]
@@ -51,7 +50,6 @@ class Blog:
                 time.sleep(2)
             except Exception as e:
                 print(f"Failed to open link {href}: {str(e)}")
-
         print("✅ Clicked all header links.\n")
         print("")
 
@@ -104,7 +102,6 @@ class Blog:
     # Click all buttons
     def click_all_buttons(self):
         print("---- 🧪 Clicking all buttons on the page...")
-        
         # First, find the total number of buttons
         total_buttons = len(self.driver.find_elements(*self.BUTTONS))
         print(f"Found {total_buttons} buttons on the page.")
@@ -124,7 +121,6 @@ class Blog:
                     time.sleep(2)
             except Exception as e:
                 print(f"❌ Could not click button #{i + 1}: {e}")
-
         print("✅ Finished clicking all buttons.\n")
 
     
