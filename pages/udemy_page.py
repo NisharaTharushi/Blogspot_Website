@@ -6,6 +6,7 @@ class Udemy:
         self.driver = driver
 
 
+    # Locators 
     TITLE = (By.CSS_SELECTOR, "a[href='https://www.pavantestingtools.com/']")
     TEXT = (By.CSS_SELECTOR, "a[href='https://www.pavantestingtools.com/']")
     HEADER = (By.ID, "PageList1")
@@ -19,8 +20,8 @@ class Udemy:
     FOOTER_LINKS = (By.TAG_NAME, "a")
     
 
-    
     print("---- Udemy Page ----")
+
     # Title   
     def title2 (self):
         title2 = self.driver.find_element(*self.TITLE)
@@ -33,6 +34,7 @@ class Udemy:
         print("image is: ",image.get_attribute("innerText"))
         print("")
 
+    
     # Header Links
     def header_links (self):
         print("---- Header links ----")
@@ -80,14 +82,12 @@ class Udemy:
         print("Embed link clicked")
         time.sleep(2)
         print("")
-
         self.driver.back()
 
 
     # Footer Links
     def footer_links(self):
         print("---- Footer links ----")
-
         footer = self.driver.find_element(*self.FOOTER_SECTION)
         footer_links = footer.find_elements(*self.FOOTER_LINKS)
         for link in footer_links:
