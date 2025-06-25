@@ -11,6 +11,8 @@ driver.get("https://www.pavanonlinetrainings.com/")
 home = OnlineTraining(driver)
 
 home.title()
+home.description()
+home.image()
 home.heading()
 home.parahraph()
 home.links()
