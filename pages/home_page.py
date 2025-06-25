@@ -29,7 +29,6 @@ class PageName: # Define the HomePage class
     CALENDAR = (By.XPATH, "//table[@class='ui-datepicker-calendar']//a")
     DATEPICKER3 = (By.ID, "17")
     SUBMIT = (By.CLASS_NAME, "submit-btn")
-    
     START_DATE = (By.ID, "start-date")
     END_DATE = (By.ID, "end-date")
     SEVENTEEN = (By.ID, "17")
@@ -84,10 +83,8 @@ class PageName: # Define the HomePage class
     SHADOW_DOM_TEXT = (By.XPATH, "//h2[normalize-space()='ShadowDOM']")
     BLOG_LINK = (By.CSS_SELECTOR, "a[href='https://www.pavantestingtools.com/']")
     BROWSE_BUTTON = (By.CSS_SELECTOR, "input[type='file']")
-
     YOUTUBE_LINK = (By.XPATH, "//a[normalize-space()='Youtube']")
-
-    
+ 
     
     # Title
     def title(self):
@@ -269,8 +266,7 @@ class PageName: # Define the HomePage class
         print("✅ Files uploaded")
         print("")
         time.sleep(4)
-
-    
+   
 
     # Static web table
     def static_web_table(self):
@@ -288,7 +284,6 @@ class PageName: # Define the HomePage class
             print("")
         print("")
         time.sleep(4)
-
 
 
     # Dynamic web table 
@@ -318,11 +313,11 @@ class PageName: # Define the HomePage class
             cells = row.find_elements(By.TAG_NAME, "th") + row.find_elements(By.TAG_NAME, "td")
             for cell in cells: 
                  print(cell.text, end=" | ")
-            print("")
-        
+            print("")        
         print("")
         time.sleep(4)
 
+     
         # find peginate button 
         self.driver.find_element(*PageName.PEGINATE_BUTTON).click()
         print("Peginate button 1 clicked")
@@ -353,7 +348,6 @@ class PageName: # Define the HomePage class
         print("")
 
 
-
     # Form 3
     def form_3(self, input_element1_text, input_element2_text, input_element3_text):
         print("---- Form 3 ----")
@@ -361,7 +355,6 @@ class PageName: # Define the HomePage class
         #scroll to the form element
         self.driver.execute_script("arguments[0].scrollIntoView();", form_element)
         time.sleep(2)
-
 
     # input element 1
         input_element1 = self.driver.find_element(*PageName.INPUT1)
@@ -375,7 +368,6 @@ class PageName: # Define the HomePage class
         time.sleep(2)  
         print("")
 
-
     # input element 2
         input_element = self.driver.find_element(*PageName.INPUT2)
         input_element.send_keys(input_element2_text)  # Enter text into the input field
@@ -387,7 +379,6 @@ class PageName: # Define the HomePage class
         print("✅ Button 2 clicked") 
         time.sleep(2) 
         print("")
-
 
     # find 3rd input element
         input_element = self.driver.find_element(*PageName.INPUT3)
@@ -417,7 +408,6 @@ class PageName: # Define the HomePage class
             self.driver.back()
             time.sleep(2)
         print("")
-
 
 
     # Tabs 
@@ -463,7 +453,6 @@ class PageName: # Define the HomePage class
         print("✅ Dynamic Button clicked")
         time.sleep(2)
         print("")
-
 
 
     # Alerts and Popups
