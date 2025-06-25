@@ -1,9 +1,7 @@
 from selenium.webdriver.common.by import By
 import time
-# explicit wait
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
-
 
 class Playwright:
 
