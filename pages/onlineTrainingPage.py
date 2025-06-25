@@ -163,7 +163,6 @@ class OnlineTraining:
         self.driver.back()
 
 
-
     # Footer Links
     def footer(self):
         print("---- Footer links ----")
