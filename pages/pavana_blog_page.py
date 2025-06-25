@@ -5,6 +5,7 @@ class Blog:
     def __init__(self, driver):
         self.driver = driver
 
+    
     # Locators
     TITLE = (By.TAG_NAME, "title")
     HEADER = (By.ID, "PageList1")
