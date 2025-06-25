@@ -33,11 +33,15 @@ class OnlineTraining:
         print("Title is: ",title.text)
         time.sleep(2)
 
+    # Description
+    def description(self):
         description = self.driver.find_element(*self.DESCRIPTION)
         print("description is: ",description.text)
         time.sleep(2)
         print("")
 
+    # Background Image
+    def image(self):
         image = self.driver.find_element(*self.IMAGE) 
         print("image is: ",image.get_attribute("src"))
         time.sleep(2)
@@ -47,7 +51,6 @@ class OnlineTraining:
     # Header links
     def heading(self):
         print("---- Header links ----")
-
         header = self.driver.find_element(*self.HEADER_SECTION)
         header_links = header.find_elements(By.TAG_NAME, "ul")
         for link in header_links:
@@ -56,10 +59,9 @@ class OnlineTraining:
         print("")
     
     
-    # Parahraph
+    # Parahraphs 
     def parahraph(self):
         print("---- Body texts ----")
-
         p = self.driver.find_elements(*self.P)
         for p in p:
             print(p.text)
@@ -70,7 +72,8 @@ class OnlineTraining:
     # Other links
     def links(self):
         print("---- Other Links ----")
-        
+    
+        # Register Here link 
         self.driver.find_element(*self.REGISTER_LINK)
         print("Register Here link clicked")
         time.sleep(2)
@@ -79,6 +82,7 @@ class OnlineTraining:
         time.sleep(2)
 
 
+        # Login Here link
         self.driver.find_element(*self.SELENIUM_COURSE_LINK)
         print("Login Here link clicked")
         time.sleep(2)
@@ -87,6 +91,7 @@ class OnlineTraining:
         time.sleep(2)
 
 
+        # Pay Now link 
         Paynow = self.driver.find_element(*self.PAYNOW_FORM)
         Paynow.click()
         print("Pay Now link clicked")
@@ -96,6 +101,7 @@ class OnlineTraining:
         time.sleep(2)
 
 
+        # Youtube link
         youtube = self.driver.find_element(*self.YOUTUBE_LINK)
         self.driver.execute_script("arguments[0].scrollIntoView();", youtube)
         self.driver.execute_script("arguments[0].click();", youtube)
@@ -110,7 +116,6 @@ class OnlineTraining:
     # Social media links
     def socialmedia(self):
         print("---- Social Media links ----")
-
         socialmedia = self.driver.find_element(*self.SOCIAL_MEDIA_SECTION)
         socialmedia_links = socialmedia.find_elements(By.TAG_NAME, "a")
         for link in socialmedia_links:
@@ -122,7 +127,6 @@ class OnlineTraining:
     # Profile and Subscribe links and buttons
     def profile(self):
         print("---- Profile and Subscribe links ----")
-
         profile = self.driver.find_element(*self.PROFILE_IMAGE)
         profile.click()
         print("Profile link clicked")
@@ -136,7 +140,6 @@ class OnlineTraining:
     # Load more button
     def loadmore(self):
         print("---- Load More button ----")
-
         loadmore = self.driver.find_element(*self.LOAD_MORE_BUTTON)
         self.driver.execute_script("arguments[0].scrollIntoView();", loadmore)
         self.driver.execute_script("arguments[0].click();", loadmore)
@@ -164,7 +167,6 @@ class OnlineTraining:
     # Footer Links
     def footer(self):
         print("---- Footer links ----")
-
         footer = self.driver.find_element(*self.FOOTER_SECTION)
         footer_links = footer.find_elements(*self.FOOTER_LINKS)
         for link in footer_links:
