@@ -63,7 +63,7 @@ class Playwright:
         print("")
 
 
-    # sub title
+    # Sub Title
     def subtitle(self):
         WebDriverWait(self.driver, 10).until(EC.presence_of_element_located(self.TITLE2))   
         title2 = self.driver.find_element(*self.TITLE2)
@@ -153,7 +153,7 @@ class Playwright:
         print("")
 
 
-    # Nav All Links
+    # Navigation All Links
     def nav_all_links(self):
         naviallinks = self.driver.find_element(*self.NAVIALLINKS)
         tagname = naviallinks.find_elements(By.TAG_NAME, "ul")
@@ -193,7 +193,7 @@ class Playwright:
         print("")
 
 
-    # List item 2 with link
+    # links in List item 2 
     def links(self):
         link = self.driver.find_element(*self.LINK)
         self.driver.execute_script("arguments[0].scrollIntoView();", link)
@@ -314,6 +314,7 @@ class Playwright:
         print("")
 
 
+    # GetByAltText() Locators
     def getByAltText(self):
         print("---- GetByAltText() Locators ----")
         getByAltText = self.driver.find_element(*self.GETBYPLACEHOLDER)
@@ -335,7 +336,6 @@ class Playwright:
             print(p.get_attribute("innerText"))
             time.sleep(2)
         print("") 
-
 
         getbytitle = self.driver.find_element(*self.GETBYTITLE)
         tag = getbytitle.find_elements(By.TAG_NAME, "li")
