@@ -2,7 +2,7 @@
 
 ###🌐 Project Overview
 
-This project contains **automated test scripts written in Python using Selenium WebDriver** for the demo website:
+This project contains automated test scripts written in Python using Selenium WebDriver, the Page Object Model (POM) design pattern for the demo healthcare appointment website.
 
 🔗 [Blogspot Automation Website](https://testautomationpractice.blogspot.com/)
 
@@ -44,7 +44,6 @@ Each page and feature is handled by dedicated test files and Page Object classes
 
 - **Language:** Python 3.x  
 - **Automation Tool:** Selenium WebDriver  
-- **Testing Framework:** Pytest  
 - **Design Pattern:** Page Object Model (POM)  
 - **Browser Driver:** ChromeDriver (via `webdriver_manager`)  
 - **Execution Platform:** Local (can be integrated with CI like GitHub Actions)
@@ -83,5 +82,6 @@ Blogspot-Website/
    ```bash
    git clone https://github.com/your-username/ecommerce-ui-testing.git
    cd ecommerce-ui-testing
+
 
 
