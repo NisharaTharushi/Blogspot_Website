@@ -45,7 +45,7 @@ Each page and feature is handled by dedicated test files and Page Object classes
 - **Language:** Python 3.x  
 - **Automation Tool:** Selenium WebDriver  
 - **Design Pattern:** Page Object Model (POM)  
-- **Browser Driver:** ChromeDriver (via `webdriver_manager`)  
+- **Browser Drivers: ChromeDriver and GeckoDriver (Firefox)
 - **Execution Platform:** Local (can be integrated with CI like GitHub Actions)
 
 ---
@@ -82,6 +82,7 @@ Blogspot-Website/
    ```bash
    git clone https://github.com/your-username/ecommerce-ui-testing.git
    cd ecommerce-ui-testing
+
 
 
 
